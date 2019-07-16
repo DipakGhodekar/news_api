@@ -9,7 +9,7 @@ module NewsApi
 
       respond_to do |format|
         format.json do
-          render json: articles, meta: pagination_attributes(articles)
+          render json: articles, meta: pagination_attributes(articles), root: 'articles'
         end
       end
     end
